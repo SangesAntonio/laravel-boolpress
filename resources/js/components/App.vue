@@ -1,18 +1,9 @@
 <template>
   <div class="container">
-    <div class="row justify-content-center">
-      <div class="col-md-8">
-        <div class="card">
-          <div class="card-header">
-            <Header />
-          </div>
-
-          <div class="card-body">
-            <h1>Sito in manutenzione</h1>
-          </div>
-        </div>
-      </div>
+    <div class="row justify-content-between">
+      <Header />
     </div>
+    <div class="section-cards row"></div>
   </div>
 </template>
 
@@ -25,3 +16,8 @@ export default {
   },
 };
 </script>
+<style scoped>
+h1 {
+  color: gray;
+}
+</style>
