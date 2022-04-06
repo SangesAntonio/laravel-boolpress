@@ -1,9 +1,9 @@
 <template>
-  <div class="container">
-    <div class="row justify-content-between">
+  <div class="">
+    <div class="">
       <Header />
     </div>
-    <main>
+    <main class="container">
       <router-view></router-view>
     </main>
   </div>

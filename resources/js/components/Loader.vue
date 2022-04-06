@@ -1,5 +1,5 @@
 <template>
-  <div id="loader">
+  <div class="loader">
     <div class="spinner-border text-light" role="status">
       <span class="visually-hidden"></span>
     </div>
@@ -11,7 +11,7 @@ export default {
 };
 </script>
 <style scoped lang='scss'>
-#loader {
+.loader {
   position: fixed;
   left: 0;
   right: 0;
