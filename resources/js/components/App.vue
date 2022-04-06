@@ -3,9 +3,9 @@
     <div class="row justify-content-between">
       <Header />
     </div>
-    <div class="section-cards row">
-      <Posts />
-    </div>
+    <main>
+      <router-view></router-view>
+    </main>
   </div>
 </template>
 
