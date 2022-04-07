@@ -2017,6 +2017,30 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 /* harmony default export */ __webpack_exports__["default"] = ({
   name: "Contact"
 });
@@ -2078,7 +2102,7 @@ __webpack_require__.r(__webpack_exports__);
 //
 /* harmony default export */ __webpack_exports__["default"] = ({
   name: "postcard",
-  props: ["post", "hide-link"],
+  props: ["post", "hidelink"],
   computed: {
     updatedAt: function updatedAt() {
       var postDate = new Date(this.post.updated_at);
@@ -6591,7 +6615,7 @@ exports = module.exports = __webpack_require__(/*! ../../../node_modules/css-loa
 
 
 // module
-exports.push([module.i, "h1[data-v-1f42fb90] {\n  color: gray;\n}", ""]);
+exports.push([module.i, "div[data-v-1f42fb90] {\n  color: white;\n}", ""]);
 
 // exports
 
@@ -38814,6 +38838,49 @@ var staticRenderFns = [
       _c("h1", [_vm._v("Contatti")]),
       _vm._v(" "),
       _c("p", [_vm._v("Chiama al mio numero o mandami una email :D")]),
+      _vm._v(" "),
+      _c("div", { staticClass: "form-group" }, [
+        _c("label", { attrs: { for: "exampleInputEmail1" } }, [
+          _vm._v("Indirizzo Email"),
+        ]),
+        _vm._v(" "),
+        _c("input", {
+          staticClass: "form-control",
+          attrs: {
+            type: "email",
+            id: "exampleInputEmail1",
+            "aria-describedby": "emailHelp",
+            placeholder: "Enter email",
+          },
+        }),
+        _vm._v(" "),
+        _c(
+          "small",
+          { staticClass: "form-text text-muted", attrs: { id: "emailHelp" } },
+          [_vm._v("Non condivideremo mai la tua email\n    ")]
+        ),
+      ]),
+      _vm._v(" "),
+      _c("div", { staticClass: "form-group" }, [
+        _c("label", { attrs: { for: "exampleInputPassword1" } }, [
+          _vm._v("Messaggio"),
+        ]),
+        _vm._v(" "),
+        _c("input", {
+          staticClass: "form-control",
+          attrs: {
+            type: "password",
+            id: "exampleInputPassword1",
+            placeholder: "Password",
+          },
+        }),
+      ]),
+      _vm._v(" "),
+      _c(
+        "button",
+        { staticClass: "btn btn-primary", attrs: { type: "submit" } },
+        [_vm._v("Submit")]
+      ),
     ])
   },
 ]
@@ -38986,7 +39053,7 @@ var render = function () {
     [
       _vm.isLoading
         ? _c("Loader")
-        : _c("Postcard", { attrs: { post: _vm.post, "hide-link": "true" } }),
+        : _c("Postcard", { attrs: { post: _vm.post, hidelink: "true" } }),
     ],
     1
   )

@@ -1,7 +1,7 @@
 <template>
   <div class="container">
     <Loader v-if="isLoading" />
-    <Postcard v-else :post="post" hide-link="true" />
+    <Postcard v-else :post="post" hidelink="true" />
   </div>
 </template>
 

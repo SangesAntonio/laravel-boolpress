@@ -6,9 +6,9 @@
         <h5 class="card-title">{{ post.title }}</h5>
         <p class="card-text">{{ post.content }}</p>
         <router-link
+          v-if="!hidelink"
           :to="{ name: 'post-show', params: { id: post.id } }"
           class="btn btn-primary"
-          v-if="!hidelink"
           >Vedi post</router-link
         >
       </div>
@@ -19,7 +19,7 @@
 <script >
 export default {
   name: "postcard",
-  props: ["post", "hide-link"],
+  props: ["post", "hidelink"],
   computed: {
     updatedAt() {
       const postDate = new Date(this.post.updated_at);
