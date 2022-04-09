@@ -1,10 +1,6 @@
 @component('mail::message')
-# IntroducGrazie per averci contattati 
+Nuovo messaggio da {{$contact['mail']}}
 
-@component('mail::button', ['url' => ''])
-Button Text
-@endcomponent
+Messaggio: {{$contact['message']}}
 
-Thanks,<br>
-{{ env('APP_NAME')}}
 @endcomponent
