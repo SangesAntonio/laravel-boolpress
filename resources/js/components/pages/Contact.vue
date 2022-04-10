@@ -1,9 +1,10 @@
 <template>
   <div>
     <h1>Contatti</h1>
-    <p>Chiama al mio numero o mandami una email :D</p>
+
     <Loader v-if="isLoading" class="loader" />
     <div v-else>
+      <Allert :message="allertmessage" type="success" />
       <div class="form-group">
         <label for="exampleInputEmail1">Indirizzo Email</label>
         <input
@@ -38,11 +39,13 @@
 
 <script>
 import Loader from "../Loader.vue";
+import Allert from "../Allert.vue";
 
 export default {
   name: "Contact",
   components: {
     Loader,
+    Allert,
   },
   data() {
     return {
